@@ -10,7 +10,7 @@
     <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, creative-portfolio, personal, masonry, grid, faq">
     <title>二次元</title>
 	<link rel="icon" href="static/image/Logo3.svg">
-<style>
+	<style>
         body{
             background: url("static/picture/77.jpg");
         }
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="static/css/style.css">
 	<p class="company-about text-white fadeIn theme-dark text-capitalize">⇟⇟⇟ ♫ ∲ ✡每处惊喜待你探索✡ ✉ ➢⇢送给所有喜欢二次元的你⇠ </a></p>
 <video style="width:270px; height:150px;" controls autoplay loop>
-<source src="static/image/ED.mp4">
+<source src="static/image/ED.avi">
 </video>
 <script>
             var stop, staticx;
@@ -273,30 +273,17 @@
             }
             if (!('ontouchstart' in window || navigator.msMaxTouchPoints)) init();
         })();    
-    </script>
-<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
-<script>
-  L2Dwidget.init({
-    "model": {
-      jsonPath:"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
-    "display": {
-      "position": "left",
-      "width": 100,
-      "height": 140,
-      "hOffset": 0,
-      "vOffset": -20
-    },
-    "mobile": {
-      "show": true,
-      "scale": 0.5
-    },
-    "react": {
-      "opacityDefault": 0.7,
-      "opacityOnHover": 0.2
-    }
-  });
-  console.log(L2Dwidget)
-</script>
+   </script>
+   <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <script>
+    L2Dwidget.init({
+      "model": { "jsonPath":"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
+      "display": { "position": "right", "width": 70, "height": 110, "hOffset": 0, "vOffset": 0 },
+      "mobile": { "show": true, "scale": 0.5 },
+      "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
+    });
+  </script>
+  <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 <script type="text/javascript">
          ! function (e, t, a) {
             function r() {
@@ -411,7 +398,7 @@ body
                     <a class="fancybox-media overlay" href="static/picture/portfolio-img1.jpg" data-fancybox="images">
                         <div class="overlay-inner">
                             <h4>网页设计待你发现</h4>
-                            <p>左下边的小可爱可是会跟着你的鼠标转动哦</p>
+                            <p>两边的小可爱可是会跟着你的鼠标转动，点击左边的小可爱会有惊喜哦</p>
                         </div>
                     </a>
                 </div>
