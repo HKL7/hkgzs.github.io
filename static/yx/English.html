@@ -31,89 +31,22 @@
 <video style="width:270px; height:150px;" controls autoplay loop>
 <source src="../image/ED.mp4">
 </video>
-<DIV id=xixi onmouseover=toBig() onmouseout=toSmall()>
-<TABLE style="FLOAT: right " border=0 cellSpacing=0 cellPadding=0 width=157>
-  <TBODY>
-  <TR>
-    <TD class=main_head height=20 vAlign=top>&nbsp;</TD></TR>
-  <TR>
-    <TD class=info vAlign=top>
-      <TABLE class=qqtable border=0 cellSpacing=0 cellPadding=0 width=120 
-      align=center>
-        <TBODY>
-        <TR>
-          <TD align=middle><a href="#" target="_blank"><IMG border=0 
-            src="../image/kefu_head.png"></a> </TD>
-        </TR>
-        <TR>
-          <TD align=middle>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
-  <TR>
-    <TD class=down_kefu vAlign=top></TD></TR></TBODY></TABLE>
+<DIV id=HK onmouseover=toBig() onmouseout=toSmall()>
+<TABLE style="FLOAT: right " border=0 cellSpacing=0 cellPadding=0 width=9>
+ </TABLE>
 <DIV class=Obtn></DIV></DIV>
-<SCRIPT language=javascript>
-		客服果果=function (id,_top,_right ){
-		var me=id.charAt?document.getElementById(id):id, d1=document.body, d2=document.documentElement;
-		d1.style.height=d2.style.height='100%';me.style.top=_top?_top+'px':0;me.style.right =_right +"px"  ;
+<script language=javascript>
+		HK=function (id,_top,_right ){
+		var me=id.charAt?document.getElementById(id):id;d1=document.body, d2=document.documentElement;me.style.top=_top?_top+'px':0;me.style.right =_right +"px"  ;
 		me.style.position='absolute';
 		setInterval(function (){me.style.top=parseInt(me.style.top)+(Math.max(d1.scrollTop,d2.scrollTop)+_top-parseInt(me.style.top))*0.1+'px';},10+parseInt(Math.random()*20));
 		return arguments.callee;
 		};
 		window.onload=function (){
-		客服果果
-		('xixi',100,-152)
+		HK
+		('HK',100,1)
 		}
-	</SCRIPT>
-<SCRIPT language=javascript> 
-			lastScrollY=0; 
-			
-			var InterTime = 1;
-			var maxWidth=-1;
-			var minWidth=-152;
-			var numInter = 8;
-			
-			var BigInter ;
-			var SmallInter ;
-			
-			var o =  document.getElementById("xixi");
-				var i = parseInt(o.style.right );
-				function Big()
-				{
-					if(parseInt(o.style.right )<maxWidth)
-					{
-						i = parseInt(o.style.right );
-						i += numInter;	
-						o.style.right =i+"px";	
-						if(i==maxWidth)
-							clearInterval(BigInter);
-					}
-				}
-				function toBig()
-				{
-					clearInterval(SmallInter);
-					clearInterval(BigInter);
-						BigInter = setInterval(Big,InterTime);
-				}
-				function Small()
-				{
-					if(parseInt(o.style.right )>minWidth)
-					{
-						i = parseInt(o.style.right );
-						i -= numInter;
-						o.style.right =i+"px";
-						
-						if(i==minWidth)
-							clearInterval(SmallInter);
-					}
-				}
-				function toSmall()
-				{
-					clearInterval(SmallInter);
-					clearInterval(BigInter);
-					SmallInter = setInterval(Small,InterTime);
-					
-				}
-				
-</SCRIPT>
+	</script>
 <script>
             var stop, staticx;
 			var img = new Image();
@@ -486,8 +419,8 @@ body
                     <img src="../picture/portfolio-img1.jpg" alt="work">
                     <a class="fancybox-media overlay" href="../picture/portfolio-img1.jpg" data-fancybox="images">
                         <div class="overlay-inner">
-                            <h4>Web design waiting for you to discover.</h4>
-                            <p>The cute one on the left will follow your mouse rotation, and clicking on it will bring surprises.</p>
+                            <h4>Web surprises await you to explore.</h4>
+                            <p>The cute ones on both sides will follow your mouse rotation, and clicking on the cute ones at the bottom left will bring surprises.</p>
                         </div>
                     </a>
                 </div>
@@ -525,7 +458,7 @@ body
                 <a class="fancybox-media overlay" href="../picture/portfolio-img4.jpg" data-fancybox="images">
                     <div class="overlay-inner">
                         <h4>Exploration 3</h4>
-                        <p>Clicking on the play button for better browsing effect.</p>
+                        <p>There is a music player in the lower left corner that can play music.</p>
                     </div>
                 </a>
             </div>
@@ -574,8 +507,8 @@ body
                 <img src="../picture/portfolio-img8.jpg" alt="work">
                 <a class="fancybox-media overlay" href="../picture/portfolio-img8.jpg" data-fancybox="images">
                     <div class="overlay-inner">
-                        <h4>You in front of the screen.</h4>
-                        <p>Don't magnify the picture with a silly smile on your face.( *ˊᵕˋ)</p>
+                        <h4>Exploration 7</h4>
+                        <p>Click on the bottom right corner of the webpage to refresh it.( *ˊᵕˋ)</p>
                     </div>
                 </a>
             </div>
@@ -585,8 +518,8 @@ body
                 <img src="../picture/portfolio-img9.jpg" alt="work">
                 <a class="fancybox-media overlay" href="../picture/portfolio-img9.jpg" data-fancybox="images">
                     <div class="overlay-inner">
-                        <h4>Final</h4>
-                        <p>We need to finish watching it all.(*/ω＼*)</p>
+                        <h4>Congratulations</h4>
+                        <p>After reading the website, you have a general introduction.(*/ω＼*)</p>
                     </div>
                 </a>
             </div>
@@ -614,7 +547,7 @@ hrsold = Math.floor(e_hrsold),
 e_minsold = 60 * (e_hrsold - hrsold),
 minsold = Math.floor(60 * (e_hrsold - hrsold)),
 seconds = Math.floor(60 * (e_minsold - minsold));
-span_dt_dt.innerHTML = daysold + "Days" + hrsold + "hours" + minsold + "minutes" + seconds + "seconds";
+span_dt_dt.innerHTML = daysold + " Days " + hrsold + " hours " + minsold + " minutes " + seconds + " seconds";
 }
 show_date_time();
 </script>
