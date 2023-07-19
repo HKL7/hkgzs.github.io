@@ -8,13 +8,23 @@
     <meta name="author" content="Themesindustry">
     <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and portfolio HTML5 template with 8 ready home page demos.">
     <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, creative-portfolio, personal, masonry, grid, faq">
+<link rel=stylesheet type=text/css href="static/css/css2.css">
     <title>二次元</title>
 	<link rel="icon" href="static/image/Logo3.svg">
+	<style>
+body
+{
+		   cursor:url('static/image/11.ico'),auto;
+           }
+</style>
 	<style>
         body{
             background: url("static/picture/77.jpg");
         }
     </style>
+	  <div onclick="location.href='index.html'">
+  		<img src="static/image/SX.png" style="width: 5rem;height: 5rem;position: fixed;bottom: 2rem;right: 0.2rem;z-index:1000000;" />
+  </div>
 	<link rel="stylesheet" href="static/css/bundle.min.css">
     <link rel="stylesheet" href="static/css/jquery-ui.bundle.css">
     <link rel="stylesheet" href="static/css/owl.carousel.min.css">
@@ -23,8 +33,80 @@
     <link rel="stylesheet" href="static/css/style.css">
 	<p class="company-about text-white fadeIn theme-dark text-capitalize">⇟⇟⇟ ♫ ∲ ✡每处惊喜待你探索✡ ✉ ➢⇢送给所有喜欢二次元的你⇠ </a></p>
 <video style="width:270px; height:150px;" controls autoplay loop>
-<source src="static/image/ED.avi">
+<source src="static/image/ED.mp4">
 </video>
+<DIV id=xixi onmouseover=toBig() onmouseout=toSmall()>
+<TABLE style="FLOAT: right " border=0 cellSpacing=0 cellPadding=0 width=160>
+  <TR>
+    <TD class=main_head height=50 vAlign=top>&nbsp;</TD></TR>
+  <TD class=info vAlign=top>
+   <TR> <TD align=middle><a href="index.html" target="_blank"><IMG border=0 src="static/image/kefu_head.png"></a> </TD>
+    </TR>
+ </TABLE>
+<DIV class=Obtn></DIV></DIV>
+<script language=javascript>
+		果果服务=function (id,_top,_right ){
+		var me=id.charAt?document.getElementById(id):id;d1=document.body, d2=document.documentElement;me.style.top=_top?_top+'px':0;me.style.right =_right +"px"  ;
+		me.style.position='absolute';
+		setInterval(function (){me.style.top=parseInt(me.style.top)+(Math.max(d1.scrollTop,d2.scrollTop)+_top-parseInt(me.style.top))*0.1+'px';},10+parseInt(Math.random()*20));
+		return arguments.callee;
+		};
+		window.onload=function (){
+		果果服务
+		('xixi',100,-152)
+		}
+	</script>
+<SCRIPT language=javascript> 
+			lastScrollY=0; 
+			
+			var InterTime = 1;
+			var maxWidth=-1;
+			var minWidth=-152;
+			var numInter = 8;
+			
+			var BigInter ;
+			var SmallInter ;
+			
+			var o =  document.getElementById("xixi");
+				var i = parseInt(o.style.right );
+				function Big()
+				{
+					if(parseInt(o.style.right )<maxWidth)
+					{
+						i = parseInt(o.style.right );
+						i += numInter;	
+						o.style.right =i+"px";	
+						if(i==maxWidth)
+							clearInterval(BigInter);
+					}
+				}
+				function toBig()
+				{
+					clearInterval(SmallInter);
+					clearInterval(BigInter);
+						BigInter = setInterval(Big,InterTime);
+				}
+				function Small()
+				{
+					if(parseInt(o.style.right )>minWidth)
+					{
+						i = parseInt(o.style.right );
+						i -= numInter;
+						o.style.right =i+"px";
+						
+						if(i==minWidth)
+							clearInterval(SmallInter);
+					}
+				}
+				function toSmall()
+				{
+					clearInterval(SmallInter);
+					clearInterval(BigInter);
+					SmallInter = setInterval(Small,InterTime);
+					
+				}
+				
+</SCRIPT>
 <script>
             var stop, staticx;
 			var img = new Image();
@@ -274,11 +356,13 @@
             if (!('ontouchstart' in window || navigator.msMaxTouchPoints)) init();
         })();    
    </script>
+
+
    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
   <script>
     L2Dwidget.init({
       "model": { "jsonPath":"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
-      "display": { "position": "right", "width": 70, "height": 110, "hOffset": 0, "vOffset": 0 },
+      "display": { "position": "right", "width":70, "height":110, "hOffset": 0, "vOffset": 0 },
       "mobile": { "show": true, "scale": 0.5 },
       "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
     });
@@ -335,12 +419,6 @@
                 ), n(), r()
         }(window, document);
     </script>
-<style>
-body
-{
-		   cursor:url('static/picture/11.ico'),auto;
-           }
-</style>
 <div class="loader-area">
     <div class='loader'>
         <div class='one'></div>
@@ -370,9 +448,9 @@ body
                         </div>
                         <ul class="navbar-nav mt-5 text-center">
                             <li class="nav-item"><a class="nav-link active">语言设置</a></li>
-							 <li class="nav-item"><a class="nav-link" href="static/中文.html">中文</a></li>
-                            <li class="nav-item"><a class="nav-link" href="static/English.html">English</a></li>
-                            <li class="nav-item"><a class="nav-link" href="static/日本語.html">日本語</a></li>
+							 <li class="nav-item"><a class="nav-link" href="static/yx/中文.html">中文</a></li>
+                            <li class="nav-item"><a class="nav-link" href="static/yx/English.html">English</a></li>
+                            <li class="nav-item"><a class="nav-link" href="static/yx/日本語.html">日本語</a></li>
                         </ul>
                         <div class="footer-social">
                             <ul class="list-unstyled text-white">
@@ -506,6 +584,7 @@ body
 </section>
 <section class="text-center footer-sec">
     <h2 class="d-none"></h2>
+	<h1><img src="static/image/HK.gif" height="27" width="27"></h1>
      <p class="company-about text-white fadeIn theme-dark text-capitalize">【作者：赖】  &copy; 2023</a></p>
  <div class="container">
 <span class="company-about text-white fadeIn theme-dark text-capitalize">本网站已存在：</span>
@@ -528,6 +607,10 @@ span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + s
 }
 show_date_time();
 </script>
+<link rel="stylesheet" href="static/css/APlayer.min.css">
+<div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="2330584288" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div>
+<script src="static/js/APlayer.min.js"></script>
+<script src="static/js/Meting.min.js"></script>
         <div class="row">
             <div class="col-md-12">
                 <div class="footer-social">
