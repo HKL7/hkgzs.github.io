@@ -1,60 +1,9 @@
-/* ===================================
-    About
-====================================== */
-
-/*
-    Theme Name: MegaOne
-    Theme URI:
-    Author: Themes Industry
-    Author URI:
-    Description: One Page Parallax Template
-    Tags: one page, multipurpose, parallax, creative, html5
-
- */
-
-/* ===================================
-    Table of Content
-====================================== */
-
-
-/*  - Fonts
-    - General
-    - Fonts
-    - Social Icon Hover
-    - Header And Navigation
-    - Slider
-    - About
-    - Team
-    - Portfolio
-    - Price
-    - Parallax
-    - Testimonial
-    - Client
-    - Blog
-    - Contact
-    - Map
-    - Footer
-    - Loader
-    - Media Queries   */
-
-
-/* ===================================
-    Google font
-====================================== */
-
 @import url('css.css');
 @import url('css1.css');
 
 
 .main-font{font-family: 'Roboto', sans-serif;}
 .alt-font{font-family: 'Montserrat', sans-serif;}
-
-
-
-
-/* ===================================
-    General
-====================================== */
 
 body {font-family: 'Roboto', sans-serif; font-size: 16px;color: #696969;font-weight:300;line-height:30px;letter-spacing: 0.2px;width: 100%; overflow-x: hidden}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1.2; font-weight: 500; font-family: 'Montserrat', sans-serif; color: #404854;}
@@ -74,18 +23,15 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 .cbp-popup-lightbox .cbp-popup-close {background: url(../image/cbp-sprite.png) no-repeat scroll -92px 0 transparent;}
 .hidden{display: none;}
 
-/* transition none */
 .no-transition *{transition-timing-function:initial; -moz-transition-timing-function:initial; -webkit-transition-timing-function:initial; -o-transition-timing-function:initial; -ms-transition-timing-function:initial; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; -ms-transition-duration: 0s;}
 
-
-/***************PRELOADER*************/
 .loader-area{
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    background-color:#fff;
+    background-color:rgba(255, 255, 255, .9);
     z-index: 999999;
 }
 .loader {
@@ -173,13 +119,6 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
         transform: rotate(405deg);
     }
 }
-
-
-
-
-/*===================================
-          NAV
- ====================================*/
 
 .width-logo img{
     width: 50%;
@@ -459,11 +398,6 @@ li.footer_list:hover{
 }
 
 
-
-/* ===================================
-    Portfolio Item
-====================================== */
-
 .wrap-item{
     padding: 0;
     margin: 0;
@@ -636,11 +570,6 @@ li.footer_list:hover{
     bottom: 95px;
 }
 
-
-/*==========================
-          Footer
- ===========================*/
-
 .footer-sec{
     padding: 2rem;
     background: #000000;
@@ -677,10 +606,7 @@ li.footer_list:hover{
 .grey-text {
     color: #FFFFFF;
 }
-/* ===================================
-   Social Icon Hover
-====================================== */
-/*icon bg hover */
+
 .facebook-bg-hvr:hover{background:#4267B2 !important;color: #fff !important; border: 1px solid transparent !important;}
 .twitter-bg-hvr:hover{background:#1DA1F2 !important;color: #fff !important; border: 1px solid transparent !important;}
 .instagram-bg-hvr:hover{background: -webkit-gradient(linear, left top, left bottom, from(#aa2fb5), color-stop(93%, #f1762c))!important;background: -o-linear-gradient(top, #aa2fb5 0%, #f1762c 93%)!important;background: linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%)!important;color: #fff !important;}
@@ -689,7 +615,6 @@ li.footer_list:hover{
 .google-bg-hvr:hover{background:#DB4437 !important;color: #fff !important; border: 1px solid transparent !important;}
 .mail-bg-hvr:hover{background:#c32aa3 !important;color: #fff !important;border: 1px solid #c32aa3 !important;}
 
-/*icon text hover */
 .facebook-text-hvr:hover{color:#4267B2 !important;}
 .twitter-text-hvr:hover{color:#1DA1F2 !important;}
 .instagram-text-hvr:hover{color:#aa2fb5 !important;}
@@ -737,9 +662,3 @@ li.footer_list:hover{
     background-color: transparent;
     color: #ffffff;
 }
-
-
-/*-------------------------------
-          Footer ends
--------------------------------*/
-
