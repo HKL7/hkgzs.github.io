@@ -1,0 +1,11 @@
+body{margin:0px}
+
+.Obtn {
+	MARGIN-TOP: 50px; WIDTH: 100px; BACKGROUND: url(../image/img3-5_1.png) no-repeat; FLOAT: right ; HEIGHT: 200px; MARGIN-RIGHT:0px
+}
+* HTML .Obtn {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../image/img3-5_1.png",sizingMethod='crop'); WIDTH: 100px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right ; HEIGHT: 200px
+}
+* + HTML .Obtn {
+	MARGIN-TOP: 50px; WIDTH: 100px; BACKGROUND: url(../image/img3-5_1.png) no-repeat; FLOAT: right ; HEIGHT: 200px; MARGIN-RIGHT:0px
+}
