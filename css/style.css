@@ -1,0 +1,492 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.txt-rt {
+	text-align: right;
+}
+
+/* text align right */
+
+.txt-lt {
+	text-align: left;
+}
+
+
+/* text align left */
+
+.txt-center {
+	text-align: center;
+}
+
+
+/* text align center */
+
+.float-rt {
+	float: right;
+}
+
+
+/* float right */
+
+.float-lt {
+	float: left;
+}
+
+
+/* float left */
+
+.clear {
+	clear: both;
+}
+
+
+/* clear float */
+
+.pos-relative {
+	position: relative;
+}
+
+
+/* Position Relative */
+
+.pos-absolute {
+	position: absolute;
+}
+
+
+/* Position Absolute */
+
+.vertical-base {
+	vertical-align: baseline;
+}
+
+
+/* vertical align baseline */
+
+.vertical-top {
+	vertical-align: top;
+}
+
+
+/* vertical align top */
+
+nav.vertical ul li {
+	display: block;
+}
+
+
+/* vertical menu */
+
+nav.horizontal ul li {
+	display: inline-block;
+}
+
+
+/* horizontal menu */
+
+img {
+	max-width: 100%;
+}
+
+
+/*end reset*/
+
+body {
+    cursor:url('../images/11.ico'),auto;
+	background: url(https://pic.ziyuan.wang/user/HK-7/2024/02/banner_f2ca6a239fab1.jpg)no-repeat 0px 0px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+h1 {
+	color: #E6E8FA;
+	font-size: 37px;
+	font-weight: 200;
+	margin: 3.5em 0 2em;
+	letter-spacing: 7px;
+	text-transform: capitalize;
+	text-align: center;
+	font-family: 'Rozha One', serif;
+	text-shadow: 0 0 5px #fff;
+}
+.hkgzs{
+	content: url(https://pic2.ziyuan.wang/user/HK-7/2024/06/hkgzs_f670d3f100d2f.png);
+    display: block;
+	width: 470px;
+	height: 190px;
+    border-radius: 20px;
+	margin: 0 auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur), auto;
+}
+@media(max-width: 764px){
+	.hkgzs {width: 300px;
+            height: 150px;
+           }
+}
+.main-agileits {
+	width: 60%;
+	padding: 3.5em;
+	margin: 55px auto;
+	background: url(https://pic.ziyuan.wang/user/HK-7/2024/02/small_5d74443778ba0.jpg)no-repeat 0px 0px;
+	background-size: cover;
+	background-position: center;
+	-webkit-box-shadow: 0 6px 43px 0 rgba(2, 2, 2, 0.53);
+	-moz-box-shadow: 0 6px 43px 0 rgba(2, 2, 2, 0.53);
+	box-shadow: 0 6px 43px 0 rgba(2, 2, 2, 0.53);
+}
+
+.main-agileits h2 {
+	color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 3px #0ff;
+	font-size: 3em;
+	font-family: 'Rozha One', serif;
+	line-height: 85px;
+}
+
+.main-agileits a {
+    font-family: 'Rozha One', sans-serif;
+	color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+.main-agileits a:hover {
+	color: #ff0000;
+    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur), auto;
+}
+
+p.para-wthree {
+	font-size: 25px;
+	color: #fff;
+	letter-spacing: 1.5px;
+	font-weight: 555;
+	margin: 1em;
+	width: 67%;
+	line-height: 31px;
+}
+.button a {
+	font-size: 17px;
+    font-weight: 777;
+	padding: 8px 32px;
+	background: rgb(48,155,237,0.5);
+	border: 2px solid #0d96f6;
+	color: #fff;
+    border-radius: 8px;
+}
+
+.button a:hover {
+	color: #ff0000;
+}
+.dmx {
+	content: url(https://pic.ziyuan.wang/user/HK-7/2024/03/1_9132d2359b0a9.gif);
+	width: 14rem;
+	height: 14rem;
+    bottom: 0;
+	right : -15px;
+	z-index: 9;
+    position: fixed;
+	cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur), auto;
+}
+@media(max-width: 764px){
+	.dmx {width: 8rem;
+          height: 8rem;
+         right : -22px}
+}
+p.copyright-agileinfo {
+	font-size: 17px;
+	letter-spacing: 1px;
+	color: #fff;
+	font-weight: 555;
+}
+
+footer p a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: underline;
+}
+
+footer p a:hover {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+footer {
+	margin: 6.5em 0;
+	text-align: center;
+}
+/*--responsive--*/
+
+@media(max-width:1680px) {
+	h1 {
+		margin: 2.5em 0 2em;
+	}
+}
+
+@media(max-width:1600px) {
+	h1 {
+		margin: 1.5em 0 1em;
+	}
+	footer {
+		margin: 3.5em 0;
+	}
+}
+
+@media(max-width:1440px) {
+	h1 {
+		margin: 2em 0 1em;
+	}
+}
+
+@media(max-width:1366px) {
+	h1 {
+		margin: 1.5em 0 1em;
+	}
+	footer {
+		margin: 3em 0;
+	}
+}
+
+@media(max-width:1280px) {
+	.main-agileits {
+		width: 65%;
+	}
+}
+
+@media(max-width:1080px) {
+	.main-agileits h2 {
+		line-height: 74px;
+	}
+}
+
+@media(max-width:1050px) {}
+
+@media(max-width:1024px) {
+	h1 {
+		margin: 1.3em 0 1em;
+	}
+	.main-agileits {
+		padding: 3.5em;
+	}
+	.main-agileits h2 {
+		font-size: 5em;
+		line-height: 78px;
+	}
+	p.para-wthree {
+		font-size: 17px;
+		letter-spacing: 1.2px;
+		line-height: 29px;
+	}
+	footer {
+		margin: 2.6em 0;
+	}
+}
+
+@media(max-width:991px) {
+	h1 {
+		margin: 1em 0 .5em;
+		letter-spacing: 5px;
+	}
+	.main-agileits h2 {
+		line-height: 70px;
+	}
+	footer {
+		margin: 2em 0;
+	}
+	p.copyright-agileinfo {
+		letter-spacing: 1.5px;
+	}
+}
+
+@media(max-width:900px) {
+	.main-agileits {
+		width: 72%;
+	}
+}
+
+@media(max-width:800px) {
+	.main-agileits {
+		width: 75%;
+		padding: 2.5em;
+	}
+	p.para-wthree {
+		font-size: 16px;
+	}
+	h1 {
+		margin: 1.1em 0 .8em;
+	}
+}
+
+@media(max-width:768px) {
+	h1 {
+		margin: 2.1em 0 1em;
+	}
+	p.para-wthree {
+		width: 97%;
+	}
+	footer {
+		margin: 4em 0;
+	}
+}
+
+@media(max-width:767px) {
+	h1 {
+		margin: 1.1em 0 .8em;
+	}
+	footer {
+		margin: 2em 0;
+	}
+}
+
+@media(max-width:667px) {
+	p.copyright-agileinfo {
+		font-size: 15px;
+	}
+	.button a {
+		font-size: 15px;
+		padding: 7px 24px;
+	}
+	h1 {
+		margin: 1.4em 0 .9em;
+		font-size: 33px;
+	}
+	.main-agileits h2 {
+		font-size: 2.7em;
+	}
+}
+
+@media(max-width:640px) {
+	.main-agileits h2 {
+		font-size: 2.7em;
+		line-height: 56px;
+	}
+	p.para-wthree {
+		font-size: 17px;
+	}
+	footer {
+		margin: 2.5em 0;
+	}
+}
+
+@media(max-width:600px) {
+	p.copyright-agileinfo {
+		letter-spacing: 1px;
+	}
+	h1 {
+		margin: 1.3em 0 .9em;
+		font-size: 32px;
+	}
+}
+
+@media(max-width:568px) {
+	p.copyright-agileinfo {
+		letter-spacing: 1px;
+		padding: 0 2em;
+		line-height: 28px;
+	}
+	footer {
+		margin: 2em 0;
+	}
+}
+
+@media(max-width:480px) {
+	h1 {
+		font-size: 31px;
+		letter-spacing: 2px;
+	}
+	p.copyright-agileinfo {
+		padding: 0 3em;
+	}
+	.main-agileits h2 {
+		font-size: 2.5em;
+	}
+}
+
+@media(max-width:440px) {
+	h1 {
+		font-size: 30px;
+		margin: .8em 1em .7em;
+		letter-spacing: 3px;
+		line-height: 47px;
+	}
+	footer {
+		margin: 1.3em 0;
+	}
+	.main-agileits h2 {
+		font-size: 2.5em;
+		line-height: 50px;
+	}
+}
+
+@media(max-width:414px) {
+	.main-agileits {
+		padding: 2em;
+	}
+	h1 {
+		margin: 1.8em 1em .7em;
+		line-height: 50px;
+	}
+	.main-agileits h2 {
+		font-size: 2.5em;
+	}
+}
+
+@media(max-width:384px) {
+	h1 {
+		margin: 0.9em 1em .7em;
+		line-height: 45px;
+		letter-spacing: 1px;
+	}
+	.main-agileits h2 {
+		font-size: 2.5em;
+		line-height: 46px;
+	}
+	p.para-wthree {
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+	footer {
+		margin: 1.4em 0;
+	}
+}
+
+@media(max-width:375px) {
+	p.copyright-agileinfo {
+		padding: 0 2em;
+	}
+	h1 {
+		margin: 0.8em 0.5em .5em;
+	}
+}
+
+@media(max-width:320px) {
+	h1 {
+		margin: 0.7em 0.2em .5em;
+		letter-spacing: 1.5px;
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.main-agileits {
+		padding: 1.5em;
+	}
+	.main-agileits h2 {
+		font-size: 2em;
+		line-height: 40px;
+	}
+	p.para-wthree {
+		font-size: 13px;
+		line-height: 25px;
+		margin: .5em 0 1em;
+	}
+	p.copyright-agileinfo {
+		padding: 0 1em;
+		letter-spacing: 0.5px;
+		line-height: 27px;
+	}
+	footer {
+		margin: .7em 0;
+	}
+}
