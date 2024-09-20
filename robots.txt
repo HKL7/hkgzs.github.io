@@ -1,0 +1,6 @@
+User-agent: *  
+# 通配符*表示对所有搜索引擎爬虫生效
+
+Sitemap: https://byhk7.us.kg/sitemap.xml  
+# 提供站点地图的URL，以帮助搜索引擎更好地索引站点内容
+
